@@ -1,0 +1,144 @@
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\appsettings.Development.json
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\appsettings.json
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.exe
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.deps.json
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.runtimeconfig.json
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\ref\AcortadorApi.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.pdb
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AutoMapper.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Humanizer.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\MailKit.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\MimeKit.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\QRCoder.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.AssemblyInfoInputs.cache
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.AssemblyInfo.cs
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.csproj.CoreCompileInputs.cache
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.MvcApplicationPartsAssemblyInfo.cs
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.MvcApplicationPartsAssemblyInfo.cache
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\scopedcss\bundle\AcortadorApi.styles.css
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.csproj.CopyComplete
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\ref\AcortadorApi.dll
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.pdb
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.genruntimeconfig.cache
+C:\ARCHIVOS MQE10\net core\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.csproj.AssemblyReference.cache
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\appsettings.json
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.exe
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.deps.json
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.runtimeconfig.json
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\ref\AcortadorApi.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AcortadorApi.pdb
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Humanizer.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\MailKit.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\MimeKit.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\QRCoder.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.csproj.AssemblyReference.cache
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.AssemblyInfoInputs.cache
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.AssemblyInfo.cs
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.csproj.CoreCompileInputs.cache
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\scopedcss\bundle\AcortadorApi.styles.css
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.csproj.CopyComplete
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\ref\AcortadorApi.dll
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.pdb
+C:\Users\jose.quispe\OneDrive - Universidad Privada Domingo Savio\Documentos\Proyecto Acortador\AcortadorApi\AcortadorApi\obj\Debug\net6.0\AcortadorApi.genruntimeconfig.cache

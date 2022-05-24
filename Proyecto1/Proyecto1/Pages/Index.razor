@@ -1,0 +1,231 @@
+﻿@page "/"
+@using Proyecto1.Data
+@using Proyecto1.DTOs
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+@inject IConfiguration configuration
+@inject IRepositorio ihttp;
+
+<PageTitle>Index</PageTitle>
+
+<div class="animate__animated animate__fadeIn">
+    <div class="content p-4" id="contenido">
+                <div class="card p-3">
+                    <h3 class="text-center mt-1 mb-5">Reuniones</h3>
+                    <div>
+                        <div class="row">
+                            <div class="col-12 col-md-10">
+                                <input type="text" name= "buscar" class="form-control" id="floatingInputValue" placeholder="Ingrese el Codigo del evento" required @bind="cad">
+                            </div>
+      
+                    <div class="col-12 col-md-2">
+                                <button class="btn btn-primary full-width" @onclick="search">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <button class="btn btn-primary full-width" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"@onclick="plataformas">
+                                <i class="fas fa-plus"></i> Crear nuevo evento</button>
+
+                        </div>
+                        
+                        <div class="col-6">
+                            <button class="btn btn-primary full-width" @onclick="traerTodos" ><i class="fas fa-list" ></i> Mostrar todos los eventos</button>
+                        </div>
+
+                    </div>
+
+                         <div class="mt-5">
+                        <table class="table"  >
+                            <thead>
+                                <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Titulo</th>
+                                    <th scope="col">Plataforma</th>
+                                    <th scope="col">Descripcion</th>
+                                    <th scope="col">Nuevo enlace</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                    @if (list != null )
+                                    {
+                                        @foreach (var item in list)
+                                            {
+                                        <tr>
+                                        <td>@item.cod</td>
+                                        <td>@item.tit</td>
+                                        <td>@item.nombreplataforma</td>
+                                         <td >@item.desc</td>
+                                        <td>@(pathApp)redirect/@item.cod</td>
+                                      </tr>
+                                        }
+                                     <Paginacion PaginaActual="PaginaActual" PaginaSeleccionada="paginaSeleccionada" PaginasTotales= "paginasTotales"></Paginacion>
+                                    }                          
+                            </tbody>
+                          </table>
+                          
+
+                    </div>                
+                </div>
+            </div>
+</div>
+<div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Creando nueva direccion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      </div>
+       <EditForm Model="dataEnlace" OnInvalidSubmit="SaveUser" >
+           <DataAnnotationsValidator/>
+      <div class="modal-body">
+                        <input type="text" class="form-control"  style="width: 100%;" id="codigo" name="codigo" placeholder="Codigo"  @bind="dataEnlace.cod" required >
+            
+                        <br /><input  type="text" class="form-control"  style="width: 100%;" id="titulo" name="titulo" placeholder="Titulo" @bind="dataEnlace.tit"  required>
+                        <br /><div class="form-floating">
+                          <textarea class="form-control" style="width: 100%;"  name="descripcion" placeholder="Descripción del evento " @bind="dataEnlace.desc"></textarea>
+                          <label for="floatingTextarea">Descripción del evento</label>
+                        </div>
+                       <br /><input  class="form-control"  style="width: 100%;" name="enlace" placeholder="Enlace" @bind="dataEnlace.enlace" required >
+                    <!--<br /><input  class="form-control"  style="width: 100%;" disabled name="estado" placeholder="Estado">-->
+                        <br />
+                        <select class="form-select" aria-label="Default select example" @bind="dataEnlace.idplataforma">
+                            <option selected style="display: none" value="0">Selecione plataforma</option>                           
+                           @if (list2 != null)
+                            {
+                                @foreach (var item in list2)
+                                {
+                                    <option value="@item.Id">@item.Nombre</option>
+                                }
+                            }
+                        </select>
+      </div>
+      </EditForm>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" @onclick="SaveUser" data-bs-dismiss="modal" >Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@code
+{
+    List<EnlaceDTO> list= null;
+    string cad = "";
+
+
+    public string pathApp = "";
+
+    EnlaceDTO obj = new EnlaceDTO();
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        pathApp = NavigationManager.BaseUri;
+
+        await traerTodos();
+        
+
+    }
+
+    //listar en laces paginados
+
+    private int PaginaActual = 1;
+    private int paginasTotales;
+
+
+    private async Task paginaSeleccionada(int Pagina)
+    {
+        PaginaActual = Pagina;
+        await traerTodos(Pagina);
+    }
+    //listar enlaces
+    private async Task traerTodos(int Pagina = 1)
+    {
+        var responseHttp = await ihttp.Get<List<EnlaceDTO>>($"Enlace/GetM?Pagina= {Pagina}");
+
+        if (!responseHttp.Error)
+        {
+            list = responseHttp.Response;
+            //var conteo = responseHttp.HttpResponseMessage.Headers.GetValues("conteo").FirstOrDefault();
+            //paginasTotales = int.Parse(responseHttp.HttpResponseMessage.Headers.GetValues("totalPaginas").FirstOrDefault());
+        }
+        else
+        {
+            // mostrar mensaje
+        }
+
+    }
+
+    //listar enlaces
+    private async Task traerTodos()
+    {
+
+        var response = await ihttp.Get<List<EnlaceDTO>>("Enlace/GetList");
+
+        if (!response.Error)
+        {
+            list = response.Response;
+        }
+        else
+        {
+            // mostrar mensaje
+        }
+
+        //list = await http .GetFromJsonAsync<List<EnlaceDTO>>("Enlace/GetList");
+        //return list;
+    }
+
+    //Buscar por titulo/codigo
+    private async Task<List<EnlaceDTO>> search()
+    {
+        if(cad != "")
+        {
+            list = await http.GetFromJsonAsync<List<EnlaceDTO>>("Enlace/Search?cad="+cad);
+            return list;
+        } else
+        {
+            // Alerta de que no ha escrito nada para buscar
+
+            return new List<EnlaceDTO>();
+        }
+    }
+
+
+    //listar plataformas
+    List<PlataformaDTO> list2= null;
+    private async Task<List<PlataformaDTO>> plataformas()
+    {
+        list2 = await http.GetFromJsonAsync<List<PlataformaDTO>>("Plataforma/ListaPlataforma");
+        return list2;
+    }  
+
+
+    //Gardar enlaces
+
+    EnlaceDTO dataEnlace { get; set; } = new EnlaceDTO() {  };
+
+    protected async Task SaveUser()
+    {
+        HttpResponseMessage result = await http.PostAsJsonAsync<EnlaceDTO>("Enlace/Guardar", dataEnlace);
+        cad = dataEnlace.cod;
+        search();
+    }
+
+    //Eliminar enlaces
+
+    //    EnlaceDTO deleteEnlace { get; set; } = new Enlace() {  };
+
+    //protected async Task DeleteEnlaces()
+    //{
+    //    HttpResponseMessage result = await http.DeleteAsync<Enlace>("Enlace/PostDelete", deleteEnlace);
+    //    NavigationManager.NavigateTo("/Index");
+    //}
+}
+
+
+
+

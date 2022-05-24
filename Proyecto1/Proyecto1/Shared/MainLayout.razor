@@ -1,0 +1,162 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime js
+@inject NavigationManager navigationManager
+@inject Auth.RenovadorToken renovadorToken;
+@inject Auth.ILoginService loginService;
+
+<PageTitle>Proyecto1</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="wrapper @classDark">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="@sideBar">
+        <MenuNav></MenuNav>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" style="height: 100vh;overflow: auto;" class="@content">
+
+        <nav class="navbar navbar-expand-lg navbar-dark @navBar" id="navbar">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn text-white" @onclick="ToggleNavMenu">
+                    <i class="fas fa-align-left"></i>
+                    <span>Menu</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent">
+                    <i class="fas fa-align-justify"></i>
+                    </button>
+
+                <span class="spacer"></span>
+
+                <div class="collapse navbar-collapse @collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" role="button" @onclick="cambiarModo">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                 <LoginDisplay/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content p-4 @contenido" id="contenido">
+            @Body
+        </div>
+    </div>
+</div>
+
+    </Authorized>
+    <NotAuthorized>
+        <NoAutorizado></NoAutorizado>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    public bool modoDark = false;
+    private string? classDark => modoDark ? "theme-dark" : null;
+
+    private bool collapseNavMenu = false;
+
+    private string? sideBar => collapseNavMenu ? "active" : null;
+    private string? content => collapseNavMenu ? "active" : null;
+    private string? contenido => collapseNavMenu ? "full-width" : null;
+    private string? navBar => collapseNavMenu ? "full-width" : null;
+    private string? collapse => collapseNavMenu ? "in" : null;
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+    DatosUsuarios? datoUsuario;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+
+        await js.InicializarStorageEvento(DotNetObjectReference.Create(this));
+
+
+
+        renovadorToken.Iniciar();
+
+        await js.InicializarTimerInactivo(DotNetObjectReference.Create(this));
+
+        //var authState = await authenticationStateTask;
+        //datoUsuario = DatosUsuarioLogueado.CargarDatosUsuario(authState);
+
+
+
+    }
+
+
+
+    [JSInvokable]
+    public async Task VerificarLogueo()
+    {
+        var authState = await authenticationStateTask!;
+        var user = authState.User;
+        if (user.Identity!.IsAuthenticated)
+        {
+
+            var token = await js.GetFromLocalStorage("TOKENKEY");
+
+            if (string.IsNullOrEmpty(token))
+            {
+                navigationManager.NavigateTo($"/login", true);
+            }
+        }
+    }
+
+    [JSInvokable]
+    public async Task Logout()
+    {
+        var authState = await authenticationStateTask!;
+        var user = authState.User;
+        bool existetoken = await loginService.existeToken();
+        if (user.Identity!.IsAuthenticated &&  existetoken)
+        {
+            navigationManager.NavigateTo("logout", true);
+        }
+    }
+    [JSInvokable]
+    public async Task cambiarModo()
+    {
+        modoDark = !modoDark;
+        if (modoDark)
+        {
+            _ = js.SetInLocalStorage("theme", "dark");
+        } else
+        {
+            _ = js.SetInLocalStorage("theme", "ligth");
+        }
+    }
+
+    [JSInvokable]
+    public async Task asignarThema()
+    {
+        var modo = await js.GetFromLocalStorage("theme");
+        if(modo == "dark")
+        {
+            modoDark = true;
+        }
+        else
+        {
+            modoDark = false;
+        }
+    }
+}

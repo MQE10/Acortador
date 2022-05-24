@@ -1,0 +1,31 @@
+﻿@inject NavigationManager navigationManager
+<h3>No Autorizado</h3>
+
+<h3>No estas autorizado para ver este contenido</h3>
+
+@code {
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+
+        var authState = await authenticationStateTask!;
+
+        if (!authState.User.Identity!.IsAuthenticated)
+        {
+            var urlReturn = navigationManager.Uri.ToString();
+            var urlbase = navigationManager.BaseUri.ToString();
+            if (urlReturn != urlbase)
+                navigationManager.NavigateTo("Login?returnpage=" + urlReturn);
+            else
+            {
+                navigationManager.NavigateTo("Login");
+            }
+        }
+
+
+    }
+
+}

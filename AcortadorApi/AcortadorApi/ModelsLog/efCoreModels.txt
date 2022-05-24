@@ -1,0 +1,1 @@
+﻿ Scaffold-DbContext Name=ConnectionStrings:Log Microsoft.EntityFrameworkCore.SqlServer -Tables LogApiSAADS -ContextDir Data -OutputDir ModelsLog -Force

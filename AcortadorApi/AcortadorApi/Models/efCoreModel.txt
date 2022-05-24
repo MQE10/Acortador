@@ -1,0 +1,1 @@
+﻿  Scaffold-DbContext Name=ConnectionStrings:Default Microsoft.EntityFrameworkCore.SqlServer -Context SAADSContext -Tables []   -ContextDir Data -OutputDir Models -Force

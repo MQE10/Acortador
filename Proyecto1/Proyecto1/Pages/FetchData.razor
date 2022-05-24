@@ -1,0 +1,93 @@
+﻿@inject HttpClient http
+@inject NavigationManager NavigationManager
+@inject IConfiguration configuration
+@inject IRepositorio ihttp;
+@page "/FetchData"
+<PageTitle>Redirect</PageTitle>
+@using Proyecto1.Data
+<div class="animate__animated animate__fadeIn">
+    <div class="content p-4" id="contenido">
+                <div class="card p-3">
+                    <h3 class="text-center mt-1 mb-5">Reuniones</h3>
+                    <div class="row mt-4">
+
+                        
+                        <div class="col-6">
+                            <button class="btn btn-primary full-width"  ><i class="fas fa-list" ></i> Mostrar todos los eventos</button>
+                        </div>
+                    </div>
+                   
+                    <Paginacion PaginaActual="PaginaActual" PaginaSeleccionada="paginaSeleccionada" PaginasTotales= "paginasTotales"></Paginacion>
+                         <div class="mt-5">
+                        <table class="table"  >
+                            <thead>
+                                <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Titulo</th>
+                                    <th scope="col">Plataforma</th>
+                                    <th scope="col">Descripcion</th>
+                                    <th scope="col">Nuevo enlace</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                    @if (list != null )
+                                    {
+                                        @foreach (var item in list)
+                                            {
+                                        <tr>
+                                        <td>@item.cod</td>
+                                        <td>@item.tit</td>
+                                        <td>@item.nombreplataforma</td>
+                                         <td >@item.desc</td>
+                                        <td>@(pathApp)redirect/@item.cod</td>
+                                      </tr>
+                                        }
+                                    }                          
+                            </tbody>
+                          </table>
+                    </div>                
+                </div>
+            </div>
+</div>
+
+@code {
+    List<EnlaceDTO> list= null;
+    string cad = "";
+
+
+    public string pathApp = "";
+
+    EnlaceDTO obj = new EnlaceDTO();
+
+
+    private int PaginaActual = 1;
+    private int paginasTotales;
+
+    protected async override Task OnInitializedAsync()
+    {
+        await traerTodos();    
+    }
+
+    private async Task paginaSeleccionada(int Pagina)
+    {
+        PaginaActual = Pagina;
+        await traerTodos(Pagina);
+    }
+    //listar enlaces
+    private async Task traerTodos(int Pagina = 1)
+    {
+        var responseHttp = await ihttp.Get<List<EnlaceDTO>>($"Enlace/GetM?Pagina= {Pagina}");
+
+        if (!responseHttp.Error)
+        {
+            list = responseHttp.Response;
+            //var conteo = responseHttp.HttpResponseMessage.Headers.GetValues("conteo").FirstOrDefault();
+            //paginasTotales = int.Parse(responseHttp.HttpResponseMessage.Headers.GetValues("totalPaginas").FirstOrDefault());
+        }
+        else
+        {
+            // mostrar mensaje
+        }
+
+    }
+}

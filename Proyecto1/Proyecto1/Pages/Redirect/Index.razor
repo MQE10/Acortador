@@ -1,0 +1,51 @@
+﻿@page "/redirect/{id}"
+@layout LoginLayout
+@inject HttpClient http
+@inject NavigationManager navigationManager
+@inject IJSRuntime JsRuntime
+<PageTitle>Redirect</PageTitle>
+
+@if(obj != null)
+{
+    @if(obj.cod == null)
+    {
+        <div class="content m-5">
+            <div class="alert alert-danger" role="alert">
+              No encontramos ningun enlace con este codigo
+            </div>
+        </div>
+    } else
+    {
+        //<meta http-equiv="refresh" content="0.1;url= @obj.enlace" />
+        <div class="animate__animated animate__fadeIn">
+            <div class="content" id="contenido">
+                <div class="card" style="width: 600px; margin: 50px auto;padding: 50px;">
+                    <h3 class="text-center mt-1 mb-5">@obj.tit</h3>
+                    <p>@obj.desc</p>
+                    <div class="row">
+                        <a class="btn btn-primary" style="width: 100%;" href= "@obj.enlace" target="_blank"  >   
+                            Ir al Enlace
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter] 
+    public string id { get; set; }
+
+    EnlaceDTO obj = null;
+
+    private async  Task<EnlaceDTO> buscarEnlace()
+    {
+        obj = await http.GetFromJsonAsync<EnlaceDTO>("Enlace/Getforcode?code="+id);
+        return obj;
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await buscarEnlace();
+    }
+}

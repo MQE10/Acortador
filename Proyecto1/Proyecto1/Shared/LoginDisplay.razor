@@ -1,0 +1,82 @@
+﻿@inject NavigationManager navigationManager
+<AuthorizeView>
+    <Authorized>
+        
+
+               <a class="nav-link" href="#" role="button" id="dropperfil" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user"></i>
+                                    @context.User.Identity!.Name
+                                </a>
+                                 
+      <div class="dropdown-menu dropdown-menu-right perfil" aria-labelledby="dropperfil">
+                              
+            @if (datoUsuario != null)
+            {
+                @if (funcionario!=null && !string.IsNullOrEmpty(funcionario.Foto))
+                {
+                    <div class="perfil-foto" style="background-image:url('@funcionario.Foto')" > </div>
+                }
+                else
+                {
+                     <div class="perfil-foto" style="background-image:url('source/images/user.png')" > </div>
+                }
+                  <p class="perfil-nombre mt-2">  @datoUsuario.NombreUsuario </p>
+
+            @if (funcionario != null)
+            {
+                <p class="text-center">Cargo: <span class="perfil-detalle">@funcionario.CargoNombre</span></p>
+                <p class="text-center">Sede: <span class="perfil-detalle">@funcionario.SedeSesionNombre</span></p>
+            }
+             <p class="perfil-detalle">@datoUsuario.Correo</p>
+
+            }
+
+            <button class="btn btn-danger full-width" @onclick="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar Sesion</button>
+            
+
+           
+
+                                    
+        </div>
+        
+
+     
+
+
+    </Authorized>
+    <NotAuthorized>
+        <a class="nav-link" href="Login">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+    DatosUsuarios? datoUsuario;
+    FuncionarioDTO? funcionario;
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var authState = await authenticationStateTask!;
+
+
+        datoUsuario = DatosUsuarioLogueado.CargarDatosUsuario(authState);
+
+
+
+    }
+
+    private void logout()
+    {
+        navigationManager.NavigateTo("Logout");
+    }
+
+
+
+
+}
