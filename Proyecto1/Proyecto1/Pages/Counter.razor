@@ -4,75 +4,38 @@
 <PageTitle>Counter</PageTitle>
 
 
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-        @foreach (var x in en)
-        {
-         <li @onclick="@(() => PaginaSeleccionadaInterno(x))"
-        style= "cursor:pointer;"
-        class= "page-item @(x.Habilitada ? null : "disabled") @(x.Activa ? "active" : null)">
-        <span class="page-link" href="#" >@x.Texto</span>
-    </li>
-        }
-  </ul>
-</nav>
+<h1>@currentHeading</h1>
+
+<p>
+    <label>
+        New title
+        <input @bind="newHeading" />
+    </label>
+    <button @onclick="UpdateHeading">
+        Update heading
+    </button>
+</p>
+
+<p>
+    <label>
+        <input type="checkbox" @onchange="CheckChanged" />
+        @checkedMessage
+    </label>
+</p>
 
 @code {
-    [Parameter] public int PaginaActual { get; set; } = 1;
-    [Parameter] public int PaginasTotales { get; set; }
-    [Parameter] public int Radio { get; set; } = 3;
-    [Parameter] public EventCallback<int> PaginaSeleccionada { get; set; }
-    List<PaginasModel> en = new List<PaginasModel>();
+    private string currentHeading = "Initial heading";
+    private string? newHeading;
+    private string checkedMessage = "Not changed yet";
 
-    private async Task PaginaSeleccionadaInterno(PaginasModel paginaModel)
+    private void UpdateHeading()
     {
-        if (paginaModel.Pagina == PaginaActual)
-        {
-            return;
-        }
-        if (!paginaModel.Habilitada)
-        {
-            return;
-        }
-        await PaginaSeleccionada.InvokeAsync(paginaModel.Pagina);
+        currentHeading = $"{newHeading}esta vacio";
     }
-    protected override void OnParametersSet()
+
+    private void CheckChanged()
     {
-        en = new List<PaginasModel>();
-        var enlaceAnteriorHabilitada = PaginaActual != 1;
-        var enlacesAnterior = PaginaActual - 1;
-        en.Add(new PaginasModel(enlacesAnterior, enlaceAnteriorHabilitada, "Anterior"));
-        for (var i = 1; i < PaginasTotales; i++)
-        {
-            if (i>= PaginaActual - Radio && i<= PaginaActual + Radio)
-            {
-                en.Add(new PaginasModel(i) { Activa = PaginaActual == i });
-            }
-        }
-        var enlacesSiguienteHabilitada = PaginaActual != PaginasTotales;
-        var enlacesSiguiente = PaginaActual + 1;
-        en.Add(new PaginasModel(enlacesSiguiente, enlacesSiguienteHabilitada, "Siguiente"));
-    }
-    class PaginasModel
-    {
-        public PaginasModel(int pagina):
-        this(pagina, true){}
-
-        public PaginasModel (int pagina, bool habilitada)
-        : this(pagina, habilitada, pagina.ToString()){}
-
-        public PaginasModel (int pagina, bool habiliada, string texto)
-        {
-            Pagina = pagina;
-            Habilitada = habiliada;
-            Texto = texto;
-        }
-
-
-    public string Texto { get; set; }
-    public int Pagina { get; set; }
-    public bool Habilitada { get; set; } = true;
-    public bool Activa { get; set; } = false;    
+        checkedMessage = $"Last changed at {DateTime.Now}";
     }
 
 }

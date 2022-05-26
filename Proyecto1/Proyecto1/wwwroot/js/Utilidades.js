@@ -36,3 +36,5 @@ function timerInactivo(dotnetHelper)
 function modoOscuro() {
     console.log(document);
 }
+
+

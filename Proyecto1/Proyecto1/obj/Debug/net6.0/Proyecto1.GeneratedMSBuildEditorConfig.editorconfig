@@ -39,10 +39,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9nb3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ARCHIVOS MQE10/net core/Proyecto1/Proyecto1/Pages/Redirect/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/ARCHIVOS MQE10/net core/Proyecto1/Proyecto1/Shared/Confirmacion.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hY2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/ARCHIVOS MQE10/net core/Proyecto1/Proyecto1/Pages/Login/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9wzi3go3sc
+
+[C:/ARCHIVOS MQE10/net core/Proyecto1/Proyecto1/Pages/Redirect/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-sshotisi9e
 
 [C:/ARCHIVOS MQE10/net core/Proyecto1/Proyecto1/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==

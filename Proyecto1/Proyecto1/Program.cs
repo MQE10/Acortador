@@ -27,6 +27,9 @@ builder.Services.AddScoped<RenovadorToken>();
 
 builder.Services.AddScoped<IRepositorio, Repositorio>();
 
+
+
+
 //CONFIGURACION HTTP 
 //builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 //builder.Services.AddConfRepositorioHTTP(configuration);

@@ -5,7 +5,7 @@ namespace Proyecto1.DTOs
     public class EnlaceDTO
     {
         [Required(ErrorMessage = "El Codigo es Obligatorio")]
-        //[RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$", ErrorMessage = "Solo se permiten Letras y numeros")]
+        [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$", ErrorMessage = "Solo se permiten Letras y numeros")]
         public string cod { get; set; } = null!;
         [Required(ErrorMessage = "El Titulo es Obligatorio")]
         public string tit { get; set; } = null!;

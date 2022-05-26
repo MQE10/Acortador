@@ -1,11 +1,13 @@
 ﻿using AcortadorApi.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace AcortadorApi.DTOs
 {
     public class EnlaceDTO
     {
+        [Required(ErrorMessage = "El Codigo es Obligatorio")]
+        [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$", ErrorMessage = "Solo se permiten Letras y numeros")]
         public string cod { get; set; } = null!;
-
         public string tit { get; set; } = null!;
         public string? desc { get; set; }
         public string enlace { get; set; } = null!;
